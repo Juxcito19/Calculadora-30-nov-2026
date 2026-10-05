@@ -53,55 +53,75 @@ public class CalculadoraVista extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Calculadora\n");
+        setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         setResizable(false);
         setSize(new java.awt.Dimension(400, 500));
 
+        txtPantalla.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         txtPantalla.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         txtPantalla.setText("0\n");
 
+        btn8.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn8.setText("8");
 
+        btn9.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn9.setText("9");
 
+        btn4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn4.setText("4");
 
+        btn7.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn7.setText("7\n");
         btn7.addActionListener(this::btn7ActionPerformed);
 
+        btn5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn5.setText("5");
         btn5.addActionListener(this::btn5ActionPerformed);
 
+        btn6.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn6.setText("6");
 
+        btn1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn1.setText("1\n");
 
+        btn3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn3.setText("3");
 
+        btn2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn2.setText("2");
 
+        btn0.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn0.setText("0");
 
+        btnSuma.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btnSuma.setText("+");
         btnSuma.addActionListener(this::btnSumaActionPerformed);
 
+        btnResta.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btnResta.setText("-\n");
         btnResta.addActionListener(this::btnRestaActionPerformed);
 
+        btnMultiplicacion.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btnMultiplicacion.setText("*");
         btnMultiplicacion.addActionListener(this::btnMultiplicacionActionPerformed);
 
+        btnDivision.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btnDivision.setText("/");
         btnDivision.addActionListener(this::btnDivisionActionPerformed);
 
+        btnRaizCuadrada.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btnRaizCuadrada.setText("√");
         btnRaizCuadrada.addActionListener(this::btnRaizCuadradaActionPerformed);
 
-        btnRaizCubica.setText("∛");
+        btnRaizCubica.setFont(new java.awt.Font("Arial", 1, 10)); // NOI18N
+        btnRaizCubica.setText("cbrt");
         btnRaizCubica.addActionListener(this::btnRaizCubicaActionPerformed);
 
+        btnLogaritmo.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnLogaritmo.setText("ln");
         btnLogaritmo.addActionListener(this::btnLogaritmoActionPerformed);
 
+        btnLimpiar.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btnLimpiar.setText("c\n");
         btnLimpiar.addActionListener(this::btnLimpiarActionPerformed);
 
@@ -147,13 +167,13 @@ public class CalculadoraVista extends javax.swing.JFrame {
                         .addComponent(btnRaizCuadrada, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnMultiplicacion, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnRaizCubica, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnRaizCubica, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnLogaritmo, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addContainerGap(57, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -186,7 +206,7 @@ public class CalculadoraVista extends javax.swing.JFrame {
                     .addComponent(btn0, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnLogaritmo, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         pack();

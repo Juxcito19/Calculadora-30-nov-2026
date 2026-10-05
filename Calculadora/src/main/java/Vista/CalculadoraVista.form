@@ -11,6 +11,9 @@
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="title" type="java.lang.String" value="Calculadora&#xa;"/>
+    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+      <Font name="Arial" size="24" style="0"/>
+    </Property>
     <Property name="resizable" type="boolean" value="false"/>
     <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[400, 500]"/>
@@ -84,8 +87,8 @@
                   </Group>
                   <Group type="102" attributes="0">
                       <Component id="btnMultiplicacion" min="-2" pref="45" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="btnRaizCubica" min="-2" pref="45" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btnRaizCubica" min="-2" pref="54" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Component id="btnLogaritmo" min="-2" pref="45" max="-2" attributes="0"/>
@@ -93,7 +96,7 @@
                       <Component id="btnLimpiar" min="-2" pref="45" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="60" max="32767" attributes="0"/>
+              <EmptySpace pref="57" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -132,7 +135,7 @@
                   <Component id="btnLogaritmo" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
                   <Component id="btnLimpiar" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="18" max="32767" attributes="0"/>
+              <EmptySpace pref="15" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -140,27 +143,42 @@
   <SubComponents>
     <Component class="javax.swing.JTextField" name="txtPantalla">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="24" style="0"/>
+        </Property>
         <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="text" type="java.lang.String" value="0&#xa;"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn8">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="8"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn9">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="9"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn4">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="4"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn7">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="7&#xa;"/>
       </Properties>
       <Events>
@@ -169,6 +187,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn5">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="5"/>
       </Properties>
       <Events>
@@ -177,31 +198,49 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn6">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="6"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn1">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="1&#xa;"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn3">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="3"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn2">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="2"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn0">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnSuma">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="+"/>
       </Properties>
       <Events>
@@ -210,6 +249,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnResta">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="-&#xa;"/>
       </Properties>
       <Events>
@@ -218,6 +260,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnMultiplicacion">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="*"/>
       </Properties>
       <Events>
@@ -226,6 +271,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnDivision">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="/"/>
       </Properties>
       <Events>
@@ -234,6 +282,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnRaizCuadrada">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="&#x221a;"/>
       </Properties>
       <Events>
@@ -242,7 +293,10 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnRaizCubica">
       <Properties>
-        <Property name="text" type="java.lang.String" value="&#x221b;"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="10" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="cbrt"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRaizCubicaActionPerformed"/>
@@ -250,6 +304,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnLogaritmo">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="14" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="ln"/>
       </Properties>
       <Events>
@@ -258,6 +315,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnLimpiar">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="c&#xa;"/>
       </Properties>
       <Events>
