@@ -46,4 +46,15 @@ public double multiplicar(double a, double b) {
 public double dividir(double a, double b) {
     return division.calcular(a, b);
 }
+public double calcularRaizCuadrada(double numero) {
+    return raizCuadrada.calcular(numero);
+}
+
+public double calcularRaizCubica(double numero) {
+    return raizCubica.calcular(numero);
+}
+
+public double calcularLogaritmoNatural(double numero) {
+    return logaritmoNatural.calcular(numero);
+}
 }
