@@ -3,12 +3,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package Vista;
+import Controlador.CalculadoraControlador;
+
 
 /**
  *
  * @author USUARIO
  */
 public class CalculadoraVista extends javax.swing.JFrame {
+        private CalculadoraControlador controlador;
+    private double primerNumero = 0;
+    private String operacionActual = "";
+    private boolean nuevaEntrada = true;
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(CalculadoraVista.class.getName());
 
@@ -16,9 +22,17 @@ public class CalculadoraVista extends javax.swing.JFrame {
      * Creates new form CalculadoraVista1
      */
     public CalculadoraVista() {
-        initComponents();
+    initComponents();
+    controlador = new CalculadoraControlador();
+}
+private void agregarNumero(String numero) {
+    if (nuevaEntrada || txtPantalla.getText().equals("0")) {
+        txtPantalla.setText(numero);
+        nuevaEntrada = false;
+    } else {
+        txtPantalla.setText(txtPantalla.getText() + numero);
     }
-
+}
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -63,12 +77,15 @@ public class CalculadoraVista extends javax.swing.JFrame {
 
         btn8.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn8.setText("8");
+        btn8.addActionListener(this::btn8ActionPerformed);
 
         btn9.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn9.setText("9");
+        btn9.addActionListener(this::btn9ActionPerformed);
 
         btn4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn4.setText("4");
+        btn4.addActionListener(this::btn4ActionPerformed);
 
         btn7.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn7.setText("7\n");
@@ -80,18 +97,23 @@ public class CalculadoraVista extends javax.swing.JFrame {
 
         btn6.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn6.setText("6");
+        btn6.addActionListener(this::btn6ActionPerformed);
 
         btn1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn1.setText("1\n");
+        btn1.addActionListener(this::btn1ActionPerformed);
 
         btn3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn3.setText("3");
+        btn3.addActionListener(this::btn3ActionPerformed);
 
         btn2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn2.setText("2");
+        btn2.addActionListener(this::btn2ActionPerformed);
 
         btn0.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btn0.setText("0");
+        btn0.addActionListener(this::btn0ActionPerformed);
 
         btnSuma.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btnSuma.setText("+");
@@ -213,27 +235,35 @@ public class CalculadoraVista extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
-        // TODO add your handling code here:
+    agregarNumero("7");
     }//GEN-LAST:event_btn7ActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
-        // TODO add your handling code here:
+        agregarNumero("5");
     }//GEN-LAST:event_btn5ActionPerformed
 
     private void btnSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumaActionPerformed
-        // TODO add your handling code here:
+    primerNumero = Double.parseDouble(txtPantalla.getText());
+    operacionActual = "+";
+    nuevaEntrada = true;    
     }//GEN-LAST:event_btnSumaActionPerformed
 
     private void btnRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestaActionPerformed
-        // TODO add your handling code here:
+     primerNumero = Double.parseDouble(txtPantalla.getText());
+    operacionActual = "-";
+    nuevaEntrada = true;  
     }//GEN-LAST:event_btnRestaActionPerformed
 
     private void btnMultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicacionActionPerformed
-        // TODO add your handling code here:
+    primerNumero = Double.parseDouble(txtPantalla.getText());
+    operacionActual = "*";
+    nuevaEntrada = true;
     }//GEN-LAST:event_btnMultiplicacionActionPerformed
 
     private void btnDivisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivisionActionPerformed
-        // TODO add your handling code here:
+    primerNumero = Double.parseDouble(txtPantalla.getText());
+    operacionActual = "/";
+    nuevaEntrada = true;
     }//GEN-LAST:event_btnDivisionActionPerformed
 
     private void btnRaizCuadradaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRaizCuadradaActionPerformed
@@ -251,6 +281,38 @@ public class CalculadoraVista extends javax.swing.JFrame {
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnLimpiarActionPerformed
+
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+        agregarNumero("1");      
+    }//GEN-LAST:event_btn1ActionPerformed
+
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+    agregarNumero("2");   
+    }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+    agregarNumero("3"); 
+    }//GEN-LAST:event_btn3ActionPerformed
+
+    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
+    agregarNumero("4");
+    }//GEN-LAST:event_btn4ActionPerformed
+
+    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+    agregarNumero("6");
+    }//GEN-LAST:event_btn6ActionPerformed
+
+    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+    agregarNumero("8"); 
+    }//GEN-LAST:event_btn8ActionPerformed
+
+    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+    agregarNumero("9");
+    }//GEN-LAST:event_btn9ActionPerformed
+
+    private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
+        agregarNumero("0");
+    }//GEN-LAST:event_btn0ActionPerformed
 
     /**
      * @param args the command line arguments
