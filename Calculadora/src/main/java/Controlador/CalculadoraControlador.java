@@ -31,4 +31,19 @@ public class CalculadoraControlador {
         raizCubica = new RaizCubica();
         logaritmoNatural = new LogaritmoNatural();
     }
+    public double sumar(double a, double b) {
+    return suma.calcular(a, b);
+}
+
+public double restar(double a, double b) {
+    return resta.calcular(a, b);
+}
+
+public double multiplicar(double a, double b) {
+    return multiplicacion.calcular(a, b);
+}
+
+public double dividir(double a, double b) {
+    return division.calcular(a, b);
+}
 }
