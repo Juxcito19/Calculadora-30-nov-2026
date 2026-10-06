@@ -267,19 +267,31 @@ private void agregarNumero(String numero) {
     }//GEN-LAST:event_btnDivisionActionPerformed
 
     private void btnRaizCuadradaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRaizCuadradaActionPerformed
-        // TODO add your handling code here:
+    double numero = Double.parseDouble(txtPantalla.getText());
+    double resultado = controlador.calcularRaizCuadrada(numero);
+    txtPantalla.setText(String.valueOf(resultado));
+    nuevaEntrada = true;     
     }//GEN-LAST:event_btnRaizCuadradaActionPerformed
 
     private void btnRaizCubicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRaizCubicaActionPerformed
-        // TODO add your handling code here:
+    double numero = Double.parseDouble(txtPantalla.getText());
+    double resultado = controlador.calcularRaizCubica(numero);
+    txtPantalla.setText(String.valueOf(resultado));
+    nuevaEntrada = true;
     }//GEN-LAST:event_btnRaizCubicaActionPerformed
 
     private void btnLogaritmoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogaritmoActionPerformed
-        // TODO add your handling code here:
+     double numero = Double.parseDouble(txtPantalla.getText());
+    double resultado = controlador.calcularLogaritmoNatural(numero);
+    txtPantalla.setText(String.valueOf(resultado));
+    nuevaEntrada = true;  
     }//GEN-LAST:event_btnLogaritmoActionPerformed
 
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
-        // TODO add your handling code here:
+    txtPantalla.setText("0");
+    primerNumero = 0;
+    operacionActual = "";
+    nuevaEntrada = true;
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
