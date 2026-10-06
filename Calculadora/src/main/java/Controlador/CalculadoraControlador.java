@@ -21,4 +21,14 @@ public class CalculadoraControlador {
     private RaizCuadrada raizCuadrada;
     private RaizCubica raizCubica;
     private LogaritmoNatural logaritmoNatural;
+
+    public CalculadoraControlador() {
+        suma = new Suma();
+        resta = new Resta();
+        multiplicacion = new Multiplicacion();
+        division = new Division();
+        raizCuadrada = new RaizCuadrada();
+        raizCubica = new RaizCubica();
+        logaritmoNatural = new LogaritmoNatural();
+    }
 }
