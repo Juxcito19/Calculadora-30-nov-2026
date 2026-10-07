@@ -182,7 +182,7 @@ private void agregarNumero(String numero) {
         btnLogaritmo.setText("ln");
         btnLogaritmo.addActionListener(this::btnLogaritmoActionPerformed);
 
-        btnLimpiar.setBackground(new java.awt.Color(51, 51, 51));
+        btnLimpiar.setBackground(new java.awt.Color(102, 102, 102));
         btnLimpiar.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btnLimpiar.setForeground(new java.awt.Color(255, 255, 255));
         btnLimpiar.setText("c\n");
