@@ -68,6 +68,7 @@ private void agregarNumero(String numero) {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Calculadora\n");
+        setBackground(new java.awt.Color(255, 204, 51));
         setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         setResizable(false);
         setSize(new java.awt.Dimension(400, 500));
@@ -76,78 +77,116 @@ private void agregarNumero(String numero) {
         txtPantalla.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         txtPantalla.setText("0\n");
 
+        btn8.setBackground(new java.awt.Color(51, 51, 51));
         btn8.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btn8.setForeground(new java.awt.Color(255, 255, 255));
         btn8.setText("8");
         btn8.addActionListener(this::btn8ActionPerformed);
 
+        btn9.setBackground(new java.awt.Color(51, 51, 51));
         btn9.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btn9.setForeground(new java.awt.Color(255, 255, 255));
         btn9.setText("9");
         btn9.addActionListener(this::btn9ActionPerformed);
 
+        btn4.setBackground(new java.awt.Color(51, 51, 51));
         btn4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btn4.setForeground(new java.awt.Color(255, 255, 255));
         btn4.setText("4");
         btn4.addActionListener(this::btn4ActionPerformed);
 
+        btn7.setBackground(new java.awt.Color(51, 51, 51));
         btn7.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btn7.setForeground(new java.awt.Color(255, 255, 255));
         btn7.setText("7\n");
         btn7.addActionListener(this::btn7ActionPerformed);
 
+        btn5.setBackground(new java.awt.Color(51, 51, 51));
         btn5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btn5.setForeground(new java.awt.Color(255, 255, 255));
         btn5.setText("5");
         btn5.addActionListener(this::btn5ActionPerformed);
 
+        btn6.setBackground(new java.awt.Color(51, 51, 51));
         btn6.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btn6.setForeground(new java.awt.Color(255, 255, 255));
         btn6.setText("6");
         btn6.addActionListener(this::btn6ActionPerformed);
 
+        btn1.setBackground(new java.awt.Color(51, 51, 51));
         btn1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btn1.setForeground(new java.awt.Color(255, 255, 255));
         btn1.setText("1\n");
         btn1.addActionListener(this::btn1ActionPerformed);
 
+        btn3.setBackground(new java.awt.Color(51, 51, 51));
         btn3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btn3.setForeground(new java.awt.Color(255, 255, 255));
         btn3.setText("3");
         btn3.addActionListener(this::btn3ActionPerformed);
 
+        btn2.setBackground(new java.awt.Color(51, 51, 51));
         btn2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btn2.setForeground(new java.awt.Color(255, 255, 255));
         btn2.setText("2");
         btn2.addActionListener(this::btn2ActionPerformed);
 
+        btn0.setBackground(new java.awt.Color(51, 51, 51));
         btn0.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btn0.setForeground(new java.awt.Color(255, 255, 255));
         btn0.setText("0");
         btn0.addActionListener(this::btn0ActionPerformed);
 
+        btnSuma.setBackground(new java.awt.Color(255, 153, 0));
         btnSuma.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btnSuma.setForeground(new java.awt.Color(255, 255, 255));
         btnSuma.setText("+");
         btnSuma.addActionListener(this::btnSumaActionPerformed);
 
+        btnResta.setBackground(new java.awt.Color(255, 153, 0));
         btnResta.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btnResta.setForeground(new java.awt.Color(255, 255, 255));
         btnResta.setText("-\n");
         btnResta.addActionListener(this::btnRestaActionPerformed);
 
+        btnMultiplicacion.setBackground(new java.awt.Color(255, 153, 0));
         btnMultiplicacion.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btnMultiplicacion.setForeground(new java.awt.Color(255, 255, 255));
         btnMultiplicacion.setText("*");
         btnMultiplicacion.addActionListener(this::btnMultiplicacionActionPerformed);
 
+        btnDivision.setBackground(new java.awt.Color(255, 153, 0));
         btnDivision.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btnDivision.setForeground(new java.awt.Color(255, 255, 255));
         btnDivision.setText("/");
         btnDivision.addActionListener(this::btnDivisionActionPerformed);
 
+        btnRaizCuadrada.setBackground(new java.awt.Color(255, 153, 0));
         btnRaizCuadrada.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btnRaizCuadrada.setForeground(new java.awt.Color(255, 255, 255));
         btnRaizCuadrada.setText("√");
         btnRaizCuadrada.addActionListener(this::btnRaizCuadradaActionPerformed);
 
+        btnRaizCubica.setBackground(new java.awt.Color(255, 153, 0));
         btnRaizCubica.setFont(new java.awt.Font("Arial", 1, 10)); // NOI18N
+        btnRaizCubica.setForeground(new java.awt.Color(255, 255, 255));
         btnRaizCubica.setText("cbrt");
         btnRaizCubica.addActionListener(this::btnRaizCubicaActionPerformed);
 
+        btnLogaritmo.setBackground(new java.awt.Color(255, 153, 0));
         btnLogaritmo.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnLogaritmo.setForeground(new java.awt.Color(255, 255, 255));
         btnLogaritmo.setText("ln");
         btnLogaritmo.addActionListener(this::btnLogaritmoActionPerformed);
 
+        btnLimpiar.setBackground(new java.awt.Color(51, 51, 51));
         btnLimpiar.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btnLimpiar.setForeground(new java.awt.Color(255, 255, 255));
         btnLimpiar.setText("c\n");
         btnLimpiar.addActionListener(this::btnLimpiarActionPerformed);
 
+        btnIgual.setBackground(new java.awt.Color(255, 153, 0));
+        btnIgual.setForeground(new java.awt.Color(255, 255, 255));
         btnIgual.setText("=");
         btnIgual.addActionListener(this::btnIgualActionPerformed);
 
