@@ -405,7 +405,12 @@ private void agregarNumero(String numero) {
     }//GEN-LAST:event_btnIgualActionPerformed
 
     private void btnpuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpuntoActionPerformed
-
+if (nuevaEntrada) {
+    txtPantalla.setText("0.");
+    nuevaEntrada = false;
+} else if (!txtPantalla.getText().contains(".")) {
+    txtPantalla.setText(txtPantalla.getText() + ".");
+}
     }//GEN-LAST:event_btnpuntoActionPerformed
 
     /**
