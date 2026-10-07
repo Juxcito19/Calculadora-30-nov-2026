@@ -155,7 +155,7 @@ private void agregarNumero(String numero) {
         btnMultiplicacion.setBackground(new java.awt.Color(255, 153, 0));
         btnMultiplicacion.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btnMultiplicacion.setForeground(new java.awt.Color(255, 255, 255));
-        btnMultiplicacion.setText("*");
+        btnMultiplicacion.setText("x");
         btnMultiplicacion.addActionListener(this::btnMultiplicacionActionPerformed);
 
         btnDivision.setBackground(new java.awt.Color(255, 153, 0));
